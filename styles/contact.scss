@@ -1,0 +1,130 @@
+.contact {
+  background-image: url("../images/city.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  .left {
+    flex: 5;
+    overflow: hidden;
+
+    .contactInfo {
+      margin-top: 30%;
+      margin-left: 10%;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      background: rgba(128, 128, 128, 0.5);
+      border-radius: 50px;
+
+      .box {
+        color: whitesmoke;
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+        margin: 20px;
+        justify-content: space-around;
+        align-items: center;
+
+        .icon {
+          padding: 8px;
+          background-color: gray;
+          color: whitesmoke;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+
+          h3 {
+            margin: 0;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .contactForm {
+      width: 45%;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 50px;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .inputbox {
+        position: relative;
+        width: 100%;
+        margin-top: 15px;
+
+        input,
+        textarea {
+          font-family: inherit;
+          height: 40px;
+          width: 100%;
+          padding: 5px 0;
+          font-size: 16;
+          margin: 20px 0;
+          border: none;
+          border-bottom: 2px solid black;
+          outline: none;
+
+          &:focus ~ span,
+          &:valid ~ span {
+            color: crimson;
+            font-size: 14px;
+            transform: translateY(-12px);
+          }
+        }
+
+        textarea {
+          resize: none;
+          height: 120px;
+          font-size: 14px;
+        }
+
+        span {
+          position: absolute;
+          left: 0;
+          padding-top: 5px;
+          font-size: 16;
+          margin: 10px 0;
+          pointer-events: none;
+          transition: 0.5s;
+          color: lightgray;
+        }
+      }
+      button {
+        margin: 0 20%;
+        width: 60%;
+        height: 35px;
+        background-color: crimson;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-weight: 800;
+        cursor: pointer;
+      }
+    }
+  }
+}

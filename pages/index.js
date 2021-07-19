@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Picture from "../components/Picture";
 import About from "../components/About";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div className="sections">
         <Picture />
         <About />
+        <Contact />
       </div>
     </div>
   );
